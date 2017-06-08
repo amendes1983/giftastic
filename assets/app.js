@@ -18,7 +18,7 @@ console.log(buttons)
 //function to call Giphy and get gifs for specific games
 $("button").on("click", function() {
   var game = $(this).attr("data-game");
-  var queryURL = "http://api.giphy.com/v1/gifs/search?q=" +
+  var queryURL = "https://api.giphy.com/v1/gifs/search?q=" +
     game + "&api_key=dc6zaTOxFJmzC&limit=10";
   $.ajax({
       url: queryURL,
